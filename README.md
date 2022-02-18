@@ -1,12 +1,22 @@
 # swisscore-pyTTS
 Easy to use python Text To Speech (TTS) library.
 
+<a href="https://pypi.org/project/swisscore-pyTTS"><img src="https://img.shields.io/pypi/v/swisscore-pyTTS.svg"></a>
+<a href="https://pypi.org/project/swisscore-pyTTS"><img src="https://img.shields.io/pypi/pyversions/swisscore-pyTTS.svg"></a>
+<a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
+
 Currently supported API's:
 * Voice RSS (api key needed)
 
 ***Note: More API's might beeing added in the future.***
 
 ## Installation
+### pip (recommended)
+***Note: If you are on macOS or Linux you may have to use `pip3`.***
+```
+pip install swisscore-pyTTS
+```
+### from source
 ***Note: If you are on macOS or Linux you may have to use `pip3`.***
 ```
 pip install git+https://github.com/SwissCorePy/swisscore-pyTTS/
