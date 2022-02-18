@@ -6,7 +6,7 @@ Easy to use python Text To Speech (TTS) library.
 <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
 
 Currently supported API's:
-* Voice RSS (api key needed)
+* <a href="https://www.voicerss.org/api/">Voice RSS</a> (api key needed)
 
 ***Note: More API's might beeing added in the future.***
 
