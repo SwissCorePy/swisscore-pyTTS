@@ -1,19 +1,3 @@
-# swisscore-pyTTS
-Easy to use python Text To Speech (TTS) library.
-
-Currently supported API's:
-* Voice RSS (api key needed)
-
-***Note: More API's might beeing added in the future.***
-
-## Installation
-***Note: If you are on macOS or Linux you may have to use `pip3`.***
-```
-pip install git+https://github.com/SwissCorePy/swisscore-pyTTS/
-```
-
-## Quick Start
-```python
 import os
 from pathlib import Path
 
@@ -25,7 +9,7 @@ from pytts import VoiceRSS
 api_key = os.getenv("API_KEY")
 
 # The text to turn into speech
-text = "Hello. Thank you for downloading this package."
+text = "Hello. Thank you for downloading this package. Have a nice day."
 
 # Setup API instance with default values
 tts = VoiceRSS(
@@ -41,8 +25,5 @@ out = Path(__file__).parent / "test.mp3"
 
 # Turn the text into a file
 if file := tts.to_file(text, out):
-    print(f"Success! Now you can do with {file.name} what you want.")
+    print(f"Success! Now you can do with '{file.name}' whatever you want.")
     pass
-
-```
-
