@@ -40,10 +40,10 @@ text = "Hello. Thank you for downloading this package."
 # Setup API instance with default values
 tts = VoiceRSS(
     api_key,
-    hl=VoiceRSS.hl.en_us,  # Set English (United States) as default
+    hl=VoiceRSS.hl.en_us,  # Set English (United States) as default language
     v=VoiceRSS.v.en_us.John,  # Set John as default voice
     c=VoiceRSS.c.MP3,  # Set MP3 as default codec
-    f=VoiceRSS.f.stereo_16khz_16bit,  # Set 16khz, 16bit, stereo as default
+    f=VoiceRSS.f.stereo_16khz_16bit,  # Set 16khz, 16bit, stereo as default format
 )
 
 # The outupt file path
@@ -51,7 +51,7 @@ out = Path(__file__).parent / "test.mp3"
 
 # Turn the text into a file
 if file := tts.to_file(text, out):
-    print(f"Success! Now you can do with {file.name} what you want.")
+    print(f"Success! Now you can do with {file.name} whatever you want.")
     pass
 
 ```
