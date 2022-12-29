@@ -52,7 +52,6 @@ out = Path(__file__).parent / "test.mp3"
 # Turn the text into a file
 if file := tts.to_file(text, out):
     print(f"Success! Now you can do with {file.name} whatever you want.")
-    pass
 
 ```
 
